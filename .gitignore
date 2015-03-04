@@ -1,0 +1,10 @@
+﻿.gitignore
+*.phpproj
+*.sln
+*.suo
+vendor/
+composer.lock
+*.user
+Properties/
+PublishProfiles
+*.phppub

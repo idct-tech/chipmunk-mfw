@@ -1,0 +1,17 @@
+{
+    "name": "idct/chipmunk-cms",
+    "description": "Chipmunk CMS: small, fast & friendly CMS engine",
+    "minimum-stability": "dev",
+    "repositories": [
+
+    ],
+    "require": {
+        "idct/chipmunk-db-for-php": "dev-master"
+    },
+     "autoload": {
+        "psr-4": {
+            "IDCT\\Cms\\Chipmunk\\": "lib/",
+            "IDCT\\Cms\\Chipmunk\\Definitions\\": "definitions/"
+        }
+    }
+}

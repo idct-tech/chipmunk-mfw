@@ -29,6 +29,14 @@ class ConfigReader implements ConfigReaderInferface
             $config->setSpecialModesDetectors($specialModeDetectors);
         }
 
+        if(isset($templateDirectory)) {
+            $config->setTemplateDirectory($templateDirectory);
+        }
+
+        if(isset($adminTemplateDirectory)) {
+            $config->setAdminTemplateDirectory($adminTemplateDirectory);
+        }
+
         return $config;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 namespace IDCT\Cms\Chipmunk\Definitions\Types;
 
-use IDCT\Cms\Chipmunk\Definitions\Types\Object as Object;
+use IDCT\Cms\Chipmunk\Definitions\Types\DatabaseObject as DatabaseObject;
 /**
  * Page short summary.
  *
@@ -10,7 +10,7 @@ use IDCT\Cms\Chipmunk\Definitions\Types\Object as Object;
  * @version 1.0
  * @author Bartosz
  */
-class Page extends Object
+class Page extends DatabaseObject
 {
     static public function generatePageId($urlParts) {
         $id = "" ;

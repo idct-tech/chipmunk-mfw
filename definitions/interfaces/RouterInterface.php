@@ -16,6 +16,10 @@ interface RouterInterface
      * @return Route
      */
     public function getCurrentRoute();
-    public function generatePageUrl(array $urlParts);
-    public function getMode();
+
+    /**
+     * Generates a route for a given url string
+     * @param array $urlParts
+     */
+    public function generateRoute($url, $mode);
 }

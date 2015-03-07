@@ -13,6 +13,7 @@ class Config
 {
     protected $editModeDetector;
     protected $specialModesDetectors;
+    protected $templateDirectory;
 
     public function setEditModeDetector(\Closure $detector) {
         $this->editModeDetector = $detector;
@@ -32,6 +33,16 @@ class Config
 
     public function getEspecialModesDetectors() {
         return $this->specialModesDetectors;
+    }
+
+    public function setTemplateDirectory($templateDirectory) {
+        $this->templateDirectory = $templateDirectory;
+
+        return $this;
+    }
+
+    public function getTemplateDirectory() {
+        return $this->templateDirectory;
     }
 
 }

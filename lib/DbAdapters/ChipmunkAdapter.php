@@ -1,6 +1,6 @@
 <?php
 namespace IDCT\Cms\Chipmunk\DbAdapters;
-use IDCT\Cms\Chipmunk\Definitions\DatabaseInterface as DatabaseInterface;
+use IDCT\Cms\Chipmunk\Definitions\Interfaces\DatabaseInterface as DatabaseInterface;
 use IDCT\Db\Chipmunk\Connector as ChipmunkDatabase;
 /**
  * Adapter to support Chipmunk DB
@@ -25,7 +25,7 @@ class ChipmunkAdapter implements DatabaseInterface
     protected $database;
 
     /**
-     * {inheritdoc}
+     * {@inheritdoc}
      */
     public function getConnector() {
         return $this->database;
@@ -44,7 +44,7 @@ class ChipmunkAdapter implements DatabaseInterface
     }
 
     /**
-     * {inheritdoc}
+     * {@inheritdoc}
      */
     public function getById($identifier) {
         if(!is_null($connector = $this->getConnector())) {
@@ -55,7 +55,7 @@ class ChipmunkAdapter implements DatabaseInterface
     }
 
     /**
-     * {inheritdoc}
+     * {@inheritdoc}
      * @todo ensure flat array
      */
     public function setById($identifier, $data, array $metadata = array()) {
@@ -67,7 +67,7 @@ class ChipmunkAdapter implements DatabaseInterface
     }
 
     /**
-     * {inheritdoc}
+     * {@inheritdoc}
      * @return mixed
      */
     public function getConfiguration() {
@@ -75,7 +75,7 @@ class ChipmunkAdapter implements DatabaseInterface
     }
 
     /**
-     * {inheritdoc}
+     * {@inheritdoc}
      */
     public function setConfiguration(array $configuration) {
         $this->configuration = $configuration;
@@ -84,7 +84,7 @@ class ChipmunkAdapter implements DatabaseInterface
     }
 
     /**
-     * {inheritdoc}
+     * {@inheritdoc}
      */
     public function initialize() {
         if(!is_null($connector = $this->getConnector())) {
@@ -100,5 +100,16 @@ class ChipmunkAdapter implements DatabaseInterface
         }
 
         return $this;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function remove($identifier) {
+        if(!is_null($connector = $this->getConnector())) {
+            return $connector->remove($identifier);
+        }
+
+        return false;
     }
 }

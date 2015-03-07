@@ -1,0 +1,21 @@
+<?php
+namespace IDCT\Cms\Chipmunk\Definitions\Interfaces;
+
+use IDCT\Cms\Chipmunk\Definitions\Types\Route as Route;
+/**
+ * Interface for Chipmunk WF routers
+ *
+ * @version 1.0
+ * @author IDCT Bartosz Pachołek [bartosz@idct.pl]
+
+ */
+interface RouterInterface
+{
+    /**
+     * Gets the current url details
+     * @return Route
+     */
+    public function getCurrentRoute();
+    public function generatePageUrl(array $urlParts);
+    public function getMode();
+}

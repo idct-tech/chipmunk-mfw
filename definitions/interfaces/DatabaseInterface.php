@@ -1,10 +1,10 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions;
+namespace IDCT\Cms\Chipmunk\Definitions\Interfaces;
 /**
- * Interface for Chipmunk CMS database adapters
+ * Interface for Chipmunk WF database adapters
  *
  * @version 1.0
- * @author IDCT Bartosz Pacho?ek [bartosz@idct.pl]
+ * @author IDCT Bartosz Pachołek [bartosz@idct.pl]
 
  */
 interface DatabaseInterface
@@ -58,4 +58,11 @@ interface DatabaseInterface
      * @return self
      */
     public function initialize();
+
+    /**
+     * Removes an entry by the given identifier
+     * @param string $identifier
+     * @return boolean
+     */
+    public function remove($identifier);
 }

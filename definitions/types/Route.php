@@ -1,7 +1,7 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Types;
+namespace IDCT\Framework\Chipmunk\Definitions\Types;
 
-use IDCT\Cms\Chipmunk\Definitions\Types\Object;
+use IDCT\Framework\Chipmunk\Definitions\Types\Object;
 /**
  * Route short summary.
  *

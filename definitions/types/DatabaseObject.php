@@ -1,8 +1,8 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Types;
+namespace IDCT\Framework\Chipmunk\Definitions\Types;
 
-use IDCT\Cms\Chipmunk\Definitions\Types\Object as Object;
-use IDCT\Cms\Chipmunk\Definitions\Helpers\StringOperations as StringOperations;
+use IDCT\Framework\Chipmunk\Definitions\Types\Object as Object;
+use IDCT\Framework\Chipmunk\Definitions\Helpers\StringOperations as StringOperations;
 
 /**
  * Abstract Base for everything

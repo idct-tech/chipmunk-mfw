@@ -1,8 +1,8 @@
 <?php
-namespace IDCT\Cms\Chipmunk;
+namespace IDCT\Framework\Chipmunk;
 
-use IDCT\Cms\Chipmunk\Definitions\Interfaces\FrontendInterface as FrontendInterface;
-use IDCT\Cms\Chipmunk\Definitions\Types\Object as Object;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\FrontendInterface as FrontendInterface;
+use IDCT\Framework\Chipmunk\Definitions\Types\Object as Object;
 /**
  * Frontend short summary.
  *

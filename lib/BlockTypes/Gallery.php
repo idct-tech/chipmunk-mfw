@@ -1,7 +1,7 @@
 <?php
-namespace IDCT\Cms\Chipmunk\BlockTypes;
+namespace IDCT\Framework\Chipmunk\BlockTypes;
 
-use IDCT\Cms\Chipmunk\Definitions\Interfaces\BlockTypeInterface as BlockType;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\BlockTypeInterface as BlockType;
 /**
  * Gallery short summary.
  *

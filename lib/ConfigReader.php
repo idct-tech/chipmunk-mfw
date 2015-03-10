@@ -1,8 +1,8 @@
 <?php
-namespace IDCT\Cms\Chipmunk;
+namespace IDCT\Framework\Chipmunk;
 
-use IDCT\Cms\Chipmunk\Definitions\Interfaces\ConfigReaderInferface as ConfigReaderInferface;
-use IDCT\Cms\Chipmunk\Definitions\Types\Config as Config;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\ConfigReaderInferface as ConfigReaderInferface;
+use IDCT\Framework\Chipmunk\Definitions\Types\Config as Config;
 /**
  * ConfigReader short summary.
  *

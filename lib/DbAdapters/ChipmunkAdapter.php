@@ -1,6 +1,6 @@
 <?php
-namespace IDCT\Cms\Chipmunk\DbAdapters;
-use IDCT\Cms\Chipmunk\Definitions\Interfaces\DatabaseInterface as DatabaseInterface;
+namespace IDCT\Framework\Chipmunk\DbAdapters;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\DatabaseInterface as DatabaseInterface;
 use IDCT\Db\Chipmunk\Connector as ChipmunkDatabase;
 /**
  * Adapter to support Chipmunk DB

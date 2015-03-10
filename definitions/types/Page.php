@@ -1,8 +1,8 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Types;
+namespace IDCT\Framework\Chipmunk\Definitions\Types;
 
-use IDCT\Cms\Chipmunk\Definitions\Types\DatabaseObject as DatabaseObject;
-use IDCT\Cms\Chipmunk\Definitions\Interfaces\BlockTypeInterface as BlockTypeInterface;
+use IDCT\Framework\Chipmunk\Definitions\Types\DatabaseObject as DatabaseObject;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\BlockTypeInterface as BlockTypeInterface;
 /**
  * Page short summary.
  *

@@ -1,6 +1,6 @@
 {
-    "name": "idct/chipmunk-cms",
-    "description": "Chipmunk CMS: small, fast & friendly CMS engine",
+    "name": "idct/chipmunk-mfw",
+    "description": "Chipmunk mfw: small, fast & friendly Micro Framework",
     "minimum-stability": "dev",
     "repositories": [
 
@@ -10,8 +10,8 @@
     },
      "autoload": {
         "psr-4": {
-            "IDCT\\Cms\\Chipmunk\\": "lib/",
-            "IDCT\\Cms\\Chipmunk\\Definitions\\": "definitions/"
+            "IDCT\\Framework\\Chipmunk\\": "lib/",
+            "IDCT\\Framework\\Chipmunk\\Definitions\\": "definitions/"
         }
     }
 }

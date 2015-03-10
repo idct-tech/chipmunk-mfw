@@ -1,5 +1,5 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Interfaces;
+namespace IDCT\Framework\Chipmunk\Definitions\Interfaces;
 /**
  * Interface for Chipmunk WF database adapters
  *

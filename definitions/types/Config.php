@@ -1,5 +1,5 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Types;
+namespace IDCT\Framework\Chipmunk\Definitions\Types;
 
 /**
  * Route short summary.

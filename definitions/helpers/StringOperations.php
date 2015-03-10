@@ -1,5 +1,5 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Helpers;
+namespace IDCT\Framework\Chipmunk\Definitions\Helpers;
 
 /**
  * StringOperations short summary.

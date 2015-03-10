@@ -1,8 +1,8 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Interfaces;
+namespace IDCT\Framework\Chipmunk\Definitions\Interfaces;
 
-use IDCT\Cms\Chipmunk\Definitions\Types\Page as Page;
-use IDCT\Cms\Chipmunk\Definitions\Types\Menu as Menu;
+use IDCT\Framework\Chipmunk\Definitions\Types\Page as Page;
+use IDCT\Framework\Chipmunk\Definitions\Types\Menu as Menu;
 /**
  * FrontendInterface short summary.
  *

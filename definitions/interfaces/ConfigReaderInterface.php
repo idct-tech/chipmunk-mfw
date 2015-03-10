@@ -1,7 +1,7 @@
 <?php
-namespace IDCT\Cms\Chipmunk\Definitions\Interfaces;
+namespace IDCT\Framework\Chipmunk\Definitions\Interfaces;
 
-use IDCT\Cms\Chipmunk\Definitions\Types\Config as Config;
+use IDCT\Framework\Chipmunk\Definitions\Types\Config as Config;
 /**
  * ConfigReader short summary.
  *

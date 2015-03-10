@@ -1,5 +1,5 @@
 <?php
-namespace IDCT\Cms\Chipmunk;
+namespace IDCT\Framework\Chipmunk;
 
 /**
  * Class1 short summary.

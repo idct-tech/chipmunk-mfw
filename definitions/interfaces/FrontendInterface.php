@@ -1,5 +1,8 @@
 <?php
 namespace IDCT\Cms\Chipmunk\Definitions\Interfaces;
+
+use IDCT\Cms\Chipmunk\Definitions\Types\Page as Page;
+use IDCT\Cms\Chipmunk\Definitions\Types\Menu as Menu;
 /**
  * FrontendInterface short summary.
  *
@@ -14,6 +17,9 @@ abstract class FrontendInterface
     abstract public function getJavascriptsPath();
     abstract public function registerCss($type, $path);
     abstract public function getCsses();
+
+    abstract public function registerPage(Page $page);
+    abstract public function registerMenu(Menu $menu);
 
     abstract public function prepare();
     abstract public function render();

@@ -8,3 +8,5 @@ composer.lock
 Properties/
 PublishProfiles
 *.phppub
+site.php
+public_html/site_contents

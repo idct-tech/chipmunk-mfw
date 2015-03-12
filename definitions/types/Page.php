@@ -1,6 +1,7 @@
 <?php
 namespace IDCT\Framework\Chipmunk\Definitions\Types;
 
+use IDCT\Framework\Chipmunk\Definitions\Types\Route as Route;
 use IDCT\Framework\Chipmunk\Definitions\Types\DatabaseObject as DatabaseObject;
 use IDCT\Framework\Chipmunk\Definitions\Interfaces\BlockTypeInterface as BlockTypeInterface;
 /**
@@ -83,5 +84,9 @@ class Page extends DatabaseObject
         }
 
         return $id;
+    }
+
+    static public function getByRoute(Route $route) {
+        return self::getById(self::generatePageId($route->getParts));
     }
 }

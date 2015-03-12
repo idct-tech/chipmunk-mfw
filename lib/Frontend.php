@@ -59,4 +59,9 @@ class Frontend extends Object implements FrontEndInterface
     public function prepare() {
 
     }
+
+    public function render() {
+
+    }
+
 }

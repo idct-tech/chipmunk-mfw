@@ -25,6 +25,7 @@ Definitions\Types\Object::setServices($services);
 $chipmunk = new \IDCT\Framework\Chipmunk();
 $chipmunk->setRouter($router)
          ->setFrontend($frontend)
+         ->setConfig($config)
          ->run();
 
 

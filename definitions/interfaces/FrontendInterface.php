@@ -21,6 +21,6 @@ abstract class FrontendInterface
     abstract public function registerPage(Page $page);
     abstract public function registerMenu(Menu $menu);
 
-    abstract public function prepare();
+    abstract public function prepare($state, Page $page);
     abstract public function render();
 }

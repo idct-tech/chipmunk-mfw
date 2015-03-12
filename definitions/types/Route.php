@@ -14,7 +14,6 @@ class Route extends Object
 {
     protected $raw;
     protected $parts;
-    protected $specialMode;
     protected $mode;
 
     public function setRaw($raw) {
@@ -37,16 +36,6 @@ class Route extends Object
 
     public function getParts() {
         return $this->parts;
-    }
-
-    public function setSpecialMode($mode) {
-        $this->specialMode = $mode;
-
-        return $this;
-    }
-
-    public function getSpecialMode() {
-        return $this->specialMode;
     }
 
     public function setMode($mode) {

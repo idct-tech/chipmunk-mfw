@@ -3,6 +3,7 @@ namespace IDCT\Framework\Chipmunk;
 
 use IDCT\Framework\Chipmunk\Definitions\Interfaces\FrontendInterface as FrontendInterface;
 use IDCT\Framework\Chipmunk\Definitions\Types\Object as Object;
+use IDCT\Framework\Chipmunk\Definitions\Types\Page as Page;
 /**
  * Frontend short summary.
  *
@@ -15,6 +16,9 @@ class Frontend extends Object implements FrontEndInterface
 {
     protected $javascripts = array();
     protected $csses = array();
+
+    protected $state;
+    protected $data;
 
     public function registerJavascript($path) {
         $this->javascripts[] = $path;
@@ -56,7 +60,7 @@ class Frontend extends Object implements FrontEndInterface
         return $this->csses;
     }
 
-    public function prepare() {
+    public function prepare($state, Page $page) {
 
     }
 

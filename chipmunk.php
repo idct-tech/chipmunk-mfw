@@ -5,6 +5,7 @@ namespace IDCT\Framework;
 use IDCT\Framework\Chipmunk\Definitions\Types\Object as Object;
 use IDCT\Framework\Chipmunk\Definitions\Types\Page as Page;
 use IDCT\Framework\Chipmunk\Definitions\Types\Config as Config;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\ProcessorInterface as ProcessorInterface;
 use IDCT\Framework\Chipmunk\Definitions\Interfaces\RouterInterface as RouterInterface;
 use IDCT\Framework\Chipmunk\Definitions\Interfaces\FrontendInterface as FrontendInterface;
 
@@ -16,6 +17,7 @@ class Chipmunk extends Object {
     protected $router;
     protected $frontend;
     protected $config;
+    protected $processor;
 
     public function setRouter(RouterInterface $router) {
         $this->router = $router;
@@ -47,6 +49,16 @@ class Chipmunk extends Object {
         return $this->frontend;
     }
 
+    public function setProcessor(ProcessorInterface $processor) {
+        $this->processor = $processor;
+
+        return $this;
+    }
+
+    public function getProcessor() {
+        return $this->processor;
+    }
+
     public function run() {
         $router = $this->getRouter();
         $currentRoute = $router->getCurrentRoute();
@@ -71,6 +83,7 @@ class Chipmunk extends Object {
                 $mode = new ModeEdit();
             }
         }
+
 
 
         $frontend = $this->getFrontend();

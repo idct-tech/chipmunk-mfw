@@ -15,9 +15,11 @@ $services->registerService('config', $config);
 $router = new Router();
 $route = new Definitions\Types\Route();
 $router->setBaseRoute($route); //inject base route
-$services->registerService('router', $config);
+$services->registerService('router', $router);
 
-//Actions parser
+//processor
+$processor = new Processor();
+$services->registerService('router', $router);
 
 
 //Frontend
@@ -31,6 +33,7 @@ $chipmunk = new \IDCT\Framework\Chipmunk();
 $chipmunk->setRouter($router)
          ->setFrontend($frontend)
          ->setConfig($config)
+         ->setProcessor($processor;)
          ->run();
 
 

@@ -2,6 +2,7 @@
 namespace IDCT\Framework\Chipmunk;
 
 use IDCT\Framework\Chipmunk\Definitions\Interfaces\ProcessorInterface as ProcessorInterface;
+use IDCT\Framework\Chipmunk\Definitions\Interfaces\SiteModeInterface as SiteModeInterface;
 use IDCT\Framework\Chipmunk\Definitions\Types\Page as Page;
 /**
  * Frontend short summary.
@@ -13,5 +14,7 @@ use IDCT\Framework\Chipmunk\Definitions\Types\Page as Page;
  */
 class Processor extends Object implements ProcessorInterface
 {
+    public function process(SiteModeInterface $siteMode, Page $data) {
 
+    }
 }

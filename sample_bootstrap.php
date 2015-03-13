@@ -10,6 +10,8 @@ $services->registerService('config',$config);
 
 //creater router
 $router = new Router();
+$route = new Definitions\Types\Route();
+$router->setBaseRoute($route); //inject base route
 $services->registerService('router',$config);
 
 //Actions parser

@@ -13,13 +13,26 @@ use IDCT\Framework\Chipmunk\Definitions\Types\Config as Config;
  */
 class ConfigReader implements ConfigReaderInferface
 {
+    protected $baseConfig;
+
+    public function setBaseConfig(Config $config) {
+        $this->baseConfig = $config;
+
+        return $this;
+    }
+
+    public function getBaseConfig()
+    {
+        return $this->baseConfig;
+    }
+
     /**
      * {@inheritdoc}
      */
     public function loadConfig($configFilePath) {
         require $configFilePath;
 
-        $config = new Config();
+        $config = clone $this->getBaseConfig();
 
         if(isset($editModeDetector)) {
             $config->setEditModeDetector($editModeDetector);

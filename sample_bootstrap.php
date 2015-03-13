@@ -21,7 +21,6 @@ $services->registerService('router', $router);
 $processor = new Processor();
 $services->registerService('router', $router);
 
-
 //Frontend
 $frontend = new Frontend();
 $services->registerService('frontend', $frontend);

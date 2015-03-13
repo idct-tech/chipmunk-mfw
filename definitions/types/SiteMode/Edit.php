@@ -12,5 +12,7 @@ use IDCT\Framework\Chipmunk\Definitions\Interfaces\SiteModeInterface as SiteMode
  */
 class Edit implements SiteModeInterface
 {
+    public function process(Page $page) {
 
+    }
 }

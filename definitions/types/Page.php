@@ -3,7 +3,7 @@ namespace IDCT\Framework\Chipmunk\Definitions\Types;
 
 use IDCT\Framework\Chipmunk\Definitions\Types\Route as Route;
 use IDCT\Framework\Chipmunk\Definitions\Types\DatabaseObject as DatabaseObject;
-use IDCT\Framework\Chipmunk\Definitions\Interfaces\BlockTypeInterface as BlockTypeInterface;
+use IDCT\Framework\Chipmunk\Definitions\Types\BlockType as BlockType;
 /**
  * Page short summary.
  *
@@ -53,7 +53,7 @@ class Page extends DatabaseObject
         return null;
     }
 
-    public function addContentBlock($sectionName, BlockTypeInterface $block) {
+    public function addContentBlock($sectionName, BlockType $block) {
         if(($section = $this->getSection($sectionName)) === null) {
             $this->newSection($sectionName);
             $section = $this->getSection($sectionName);
@@ -64,7 +64,7 @@ class Page extends DatabaseObject
         return $this;
     }
 
-    public function removeContentBlock($sectionName, BlockTypeInterface $block) {
+    public function removeContentBlock($sectionName, BlockType $block) {
         if(($section = $this->getSection($sectionName)) !== null) {
             foreach($section as $i => $object) {
                 if($object === $block) {

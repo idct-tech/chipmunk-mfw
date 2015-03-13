@@ -84,6 +84,9 @@ class Chipmunk extends Object {
             }
         }
 
+        $processor = $this->getProcessor();
+        $processor->process($mode, $page);
+
 
 
         $frontend = $this->getFrontend();

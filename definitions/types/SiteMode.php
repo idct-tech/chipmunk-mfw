@@ -11,4 +11,6 @@ namespace IDCT\Framework\Chipmunk\Definitions\Types;
 abstract class SiteMode
 {
     protected $mode = 'undefined';
+
+    abstract public function process(Page $page);
 }

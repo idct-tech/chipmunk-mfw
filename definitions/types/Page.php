@@ -35,6 +35,10 @@ class Page extends DatabaseObject
         return null;
     }
 
+    public function getListOfSections() {
+        return array_keys($this->sections);
+    }
+
     public function setCustomAttribute($name, $value) {
         $this->customAttributes[$name] = $value;
 

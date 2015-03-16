@@ -15,6 +15,12 @@ use IDCT\Framework\Chipmunk\Definitions\Types\Page as Page;
 class Processor extends Object implements ProcessorInterface
 {
     public function process(SiteModeInterface $siteMode, Page $data) {
+        //the siteMode object is the real processor
 
+        /*
+         * in most cases the 'normal' mode will do really nothing to the data,
+         * yet will be used for some automatic operations like email sending
+         */
+        $data = $siteMode->process($data);
     }
 }

@@ -11,7 +11,8 @@
      "autoload": {
         "psr-4": {
             "IDCT\\Framework\\Chipmunk\\": "lib/",
-            "IDCT\\Framework\\Chipmunk\\Definitions\\": "definitions/"
+            "IDCT\\Framework\\Chipmunk\\Definitions\\": "definitions/",
+            "IDCT\\Framework\\Chipmunk\\Templates\\": "templates/"
         }
     }
 }
